@@ -5,7 +5,7 @@ import sklearn
 from flask import Flask, render_template, request,jsonify,url_for
 app=Flask(__name__)
 
-client = MongoClient("mongodb+srv://himu:himu@cluster0.qkmvt.mongodb.net/students?retryWrites=true&w=majority",ssl_cert_reqs=ssl.CERT_NONE)
+client = MongoClient("mongodb+srv://username:pwd@cluster0.qkmvt.mongodb.net/students?retryWrites=true&w=majority",ssl_cert_reqs=ssl.CERT_NONE)
 db=client["students"]
 
 @app.route('/',methods=['POST'])
