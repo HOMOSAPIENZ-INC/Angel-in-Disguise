@@ -2,7 +2,7 @@
 This project is to monitor the daily performance and mental heath index of the students(aged 5-18).<br>
 The approach we've taken is to take inputs about the amount of hours spent by the student on various things like study, sleep and activity
 to measure the performance using pre-trained Machine Learning model.<br>
-We'll taking the search history of the student with the permission of his parents and analyse the depression level based on this. <br>
+We'll taking the search history from the logs generated in the phone of the student with the permission of his parents and analyse the depression level based on this. <br>
 The classifier and the model will be used to predict the depression level in the student and only the depression level will be sent to the parents, all of his private data will be kept in the database.<br>
 
 ## Tech Used
