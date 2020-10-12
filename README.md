@@ -8,7 +8,7 @@ The classifier and the model will be used to predict the depression level in the
 ## Tech Used
 **1. Flutter<br>
 2. Flask<br>
-3. MongoDB Altlas<br>
+3. MongoDB Atlas<br>
 4. git**
 
 ## Python Libraries used:
