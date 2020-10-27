@@ -1,20 +1,9 @@
 import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.tokenize import word_tokenize
-from textblob import TextBlob
 import io
 
 class Sentiment(object):
 
-    @staticmethod
-    def vader(file):
-        analyzer = SentimentIntensityAnalyzer()
-        with open(file, 'r') as in_file:
-            text = in_file.read()
-            sents = nltk.sent_tokenize(text)
-            for s in sents:
-                snt = analyzer.polarity_scores(s)
-                print("{:-<40} {}".format(s, str(snt)))
 
     @staticmethod
     def naive(file):
@@ -42,11 +31,4 @@ class Sentiment(object):
 
                 print (s, (classifier.classify(test_data_features)))
 
-    @staticmethod
-    def blob(file):
-        with io.open(file, 'r', encoding='utf-8') as in_file:
-            text = in_file.read()
-            sents = nltk.sent_tokenize(text)
-            for s in sents:
-                q = TextBlob(s)
-                print (s, q.sentiment)
+ 
