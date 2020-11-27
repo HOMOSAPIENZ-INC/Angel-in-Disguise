@@ -1,4 +1,4 @@
-# VITHACK2020
+# Angel in Disguise 
 This project is to monitor the daily performance and mental heath index of the students(aged 5-18).<br>
 The approach we've taken is to take inputs about the amount of hours spent by the student on various things like study, sleep and activity
 to measure the performance using pre-trained Machine Learning model.<br>
